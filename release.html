@@ -1,0 +1,242 @@
+<!doctype html>
+
+<!--
+ Filename: Final Project html file
+ Written by: Gift Ajayi (GA)
+ Purpose: A functional web page for my final project, which is a web page of a cafe
+ Date: 06 December 2022
+ Modification History:
+  NO MODIFICATION HISTORY 
+-->
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>CAFE KELA</title>
+  <link rel="stylesheet" type="text/css" href="release.css">
+  <link rel="stylesheet" type="text/css" href="theme/jquery-ui.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+  </script>
+
+  <!--This links to the js code specific for this page-->
+ 
+  <script src="theme/jquery-ui.js"></script>
+  <script src="validation/dist/jquery.validate.js"></script>
+
+ <script src="release.js"></script>
+
+
+</head>
+
+<body>
+    <div id="jake">
+      <h2 class="demoHeaders">AJ'S CAFE AND CONFECTIONARIES</h2>
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Menu</a></li>
+          <li><a href="#tabs-2">Contact us</a></li>
+          <li><a href="#tabs-3">About</a></li>
+        </ul> <br><br><br><br><br><br>
+
+
+
+        <div id="tabs-1">
+          <!-- Accordion -->
+          <h2 class="demoHeaders">MENU</h2>
+          <div id="accordion">
+            <h3>DRINKS</h3>
+            <div>This is our drinks menu
+              <form action="#" id="mark">
+
+                <fieldset>
+                  <label for="drink">Select a drink</label>
+                  <select name="drink" id="drink">
+                    <option value="lemonade">lemonade</option>
+                    <option value="tea">tea</option>
+                    <option value="water">water</option>
+                    <option value="juice">juice</option>
+                    <option value="cocktail">cocktail</option>
+                  </select>
+                </fieldset>
+
+                <!-- Checkboxradio uses just radio -->
+                <h3 class="demoHeaders">Drink custom</h3>
+                <div id="radioset">
+                  <input type="checkbox" id="radio14" name="radio" value="lemon"><label for="radio14">lemon</label>
+                  <input type="checkbox" id="radio2" name="radio" value="sweetner"><label for="radio2">sweetner</label>
+                  <input type="checkbox" id="radio3" name="radio" value="ice"><label for="radio3">ice</label>
+                </div>
+
+                <!-- Spinner -->
+                <h3 class="demoHeaders">Select amount</h3>
+                <input name = "spinnerr" type = "number" id="spinner1" required>
+
+              </form>
+
+            </div>
+            <h3>COFFEE</h3>
+            <div>This is our coffee menu.
+
+              <form action="#" id="johnny">
+
+                <fieldset>
+                  <label for="coffee">Select your coffee</label>
+                  <select name="coffee" id="coffee">
+                    <option value="americano">americano</option>
+                    <option value="frappacino">frappacino</option>
+                    <option value="caramel macchiato">caramel macchiato</option>
+                    <option value="latte">latte</option>
+                    <option value="irish">irish</option>
+                  </select>
+                </fieldset>
+
+                <!-- Checkboxradio pet uses radiotwo-->
+                <h3 class="demoHeaders">Coffee Custom</h3>
+                <div id="radiopet">
+                  <input type="checkbox" id="radio10" name="radiotwo" value="iced"><label for="radio10">iced</label>
+                  <input type="checkbox" id="radio11" name="radiotwo" value="hot"><label for="radio11">hot</label>
+                  <input type="checkbox" id="radio12" name="radiotwo" value="extra sugar"><label for="radio12">extra
+                    sugar</label>
+                  <input type="checkbox" id="radio13" name="radiotwo" value="caramel crunch"><label
+                    for="radio13">caramel crunch</label>
+
+                </div>
+
+                <!-- Spinner -->
+                <h3 class="demoHeaders">Select amount</h3>
+                <input  name = "spinnerr" type = "number" id="spinner2" required>
+
+              </form>
+
+            </div>
+            <h3>SNACKS</h3>
+            <div>This is our snacks menu
+
+              <!-- Checkboxradio for radiocat uses radiouno -->
+              <h3 class="demoHeaders">Snacks</h3>
+              <form id="loey">
+                <div id="radiocat">
+                  <input type="checkbox" id="radio4" name="radiouno" value="cake pops"><label for="radio4">cake
+                    pops</label><br>
+                  <input type="checkbox" id="radio5" name="radiouno" value="lemon tarts"><label for="radio5">lemon
+                    tarts</label><br>
+                  <input type="checkbox" id="radio6" name="radiouno" value="meat pie"><label for="radio6">meat
+                    pie</label><br>
+                  <input type="checkbox" id="radio7" name="radiouno" value="egg tart"><label for="radio7">egg
+                    tart</label><br>
+                  <input type="checkbox" id="radio8" name="radiouno" value="chocolate parfait"><label
+                    for="radio8">chocolate parfait</label><br>
+                  <input type="checkbox" id="radio9" name="radiouno" value="chicken sandwich"><label
+                    for="radio9">chicken sandwich</label><br>
+
+
+
+                </div>
+                <!-- Spinner -->
+                <h3 class="demoHeaders">Select amount</h3>
+                <input name = "spinnerr" type = "number" id="spinner3" required>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- contacts tab -->
+        <div id="tabs-2">
+          <form id="jumo" method="get">
+            <fieldset>
+              <legend>Contact Us:</legend>
+              <label for="fname">First name:</label>
+              <input type="text" id="fname" name="fname" required ="required" autofocus><br><br>
+              <label for="lname">Last name:</label>
+              <input type="text" id="lname" name="lname" required ="required" ><br><br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required ="required" ><br><br>
+
+              <!-- USE OF DATE PICKER -->
+              <label for="birthday">Birthday:</label>
+              <input type="text" id="birthday" name="birthday" required ="required" ><br><br>
+              <label for="pwd">Password:</label>
+              <input type="password" id="pwd" name="pwd" required ="required" ><br><br>
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" placeholder="number" required ="required" ><br><br>
+
+              <fieldset>
+                <legend>HOW WOULD YOU LIKE US TO REACH OUT </legend>
+               
+                <fieldset>
+            <!--    <div>                  </div>-->
+
+                  <legend>Choose Your Prefrence : </legend>
+                  <label for="radio-1">TELEPHONE</label>
+                  <input type="radio" name="radio1" id="radio-1" value="telephone" >
+                  <label for="radio-2">EMAIL</label>
+                  <input type="radio" name="radio1" id="radio-2" value="email">
+                  <div>
+                    <label for = "radio1" class="error"></label>
+                  </div>
+                  
+                </fieldset>
+              </fieldset>
+
+              <fieldset>
+                <legend> PLEASE RATE YOUR EXPERIENCE </legend>
+
+                <fieldset>
+                  <legend >Ratings: </legend>
+                  <div >
+                  <label for="rating">Slightly Satisfied</label>
+                  <input type="checkbox" name="rating" id="rating" value=" Slightly Satisfied">
+                  <label for="rating">Satisfied</label>
+                  <input type="checkbox" name="rating" id="rating2" value="Satisfied"  checked = "checked">
+                  <label for="rating">Greatly Satisfied</label>
+                  <input type="checkbox" name="rating" id="rating3" value=" Greatly Satisfied">
+                  </div>
+                  <div>
+                    <label for = "rating" class="error"></label>
+                  </div>
+                </fieldset>
+              </fieldset>
+              
+            </fieldset>
+<input type="submit" value="submit" id="submit">
+<input type="reset" value="reset" id="reset">
+  
+          </form>
+
+        </div>
+
+        <div id="tabs-3">
+          <p>AJ'S CAFE AND CONFECTIONARIES is a womens owned business that is brought to you by two best friends and
+            their love for coffee and sweet confectionaries. It has always been our dream to own a small coffee shop
+            with our own pastries and we're glad to bring our favorite things that we love to the public consumption.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  <!--users output-->
+<aside id="Lib">
+
+  <article>
+    <header>
+      <h2 style="color: white" id="judd"></h2>
+    </header>
+
+    <div id="jumjum">
+
+      <p id="jugg" style="color: white"></p>
+    </div>
+
+  </article>
+</aside>
+
+</body>
+
+
+
+</html>
