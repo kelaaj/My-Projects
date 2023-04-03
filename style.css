@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #D2B48C;
+}
+
+header {
+  background-color: #8B4513;
+  padding: 20px;
+}
+
+nav {
+  background-color: #8B4513;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #8B0000;
+}
+
+section {
+  margin-top: 50px;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+#jule {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+#jule {
+  background-color: #D2B48C;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+section p {
+  margin-bottom: 10px;
+}
+
+section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #8B4513;
+}
+
+/* Style for small screens */
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+}
+
+/* Style for larger screens */
+@media only screen and (min-width: 601px) {
+  header {
+    padding: 20px;
+  }
+}
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
